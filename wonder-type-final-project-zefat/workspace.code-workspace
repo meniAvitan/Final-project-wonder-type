@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\React\\E-commerce"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "wonder-type-final-project-zefat"
+	}
+}

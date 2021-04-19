@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" 
+        crossorigin="anonymous"
+    >
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>הזנת מילים</title>
+</head>
+<body dir="rtl">
+    <h1 class="animate__animated animate__backInDown">טופס הכנסת מילים ותמונות</h1>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off" enctype="multipart/form-data">
+                    <div>
+                        <label>מילה*</label><label class="validation-error hide" id="wordValidationError"> שדה חובה </label>
+                        <input type="text" name="word" id="word">
+                    </div>
+                    <div>
+                        <label>קטגוריה*</label><label class="validation-error hide" id="categoryValidationError"> שדה חובה </label>
+                        <input type="text" name="category" id="category">
+                    </div>
+                    <div>
+                        <label>רמת קושי*</label><label class="validation-error hide" id="levelValidationError"> שדה חובה </label>
+                        <input type="number" name="level" id="level">
+                    </div>
+                    <div>
+                        <label>קובץ תמונה</label>
+                        <input type="file" name="file" id="file">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                   
+                </form>
+            </td>
+            <td>
+                <table class="list" id="wordList">
+                    <thead>
+                        <tr>
+                            <th>מילה</th>
+                            <th>קטגוריה</th>
+                            <th>רמת קושי</th>
+                            <th>קובץ תמונה</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody >
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+   
+<script type="text/javascript" src="enter-words.js"></script>
+</body>
+</html>
